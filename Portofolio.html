@@ -257,6 +257,41 @@
         .heart {
             color: #e74c3c;
         }
+
+        .card {
+            margin: 15px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: #fff;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            object-fit: cover;
+            height: 200px;
+            border-bottom: 5px solid #007bff;
+        }
+
+        .profile-photo {
+            margin-bottom: 10px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Warna saat hover */
+            transform: scale(1.05); /* Efek zoom saat hover */
+        }
     </style>
 </head>
 <body>
@@ -349,6 +384,66 @@
 </body>
 </html>
         
+
+<section class="portfolio-section" id="portfolio">
+    <div class="container">
+        <h2 class="section-title text-center">Portofolio</h2>
+        <p class="text-center text-muted">Beberapa karya terbaik saya</p>
+
+        <div class="swiper portfolio-swiper">
+            <div class="swiper-wrapper">
+                <!-- Proyek Database Perhotelan -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="databases.jpeg" alt="Database Perhotelan" class="card-img-top rounded" style="width: 100%; height: auto;">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-hotel"></i> Database Perhotelan</h5>
+                            <p class="card-text">Membangun sistem database untuk manajemen data perhotelan, termasuk pemesanan dan pengelolaan tamu.</p>
+                            <p class="card-text">
+                                <strong>Fitur Utama:</strong>
+                                <ul>
+                                    <li>Manajemen data tamu yang efisien</li>   
+                                    <li>Antarmuka pengguna yang intuitif</li>
+                                    <li>Integrasi sistem pemesanan</li>
+                                </ul>
+                            </p>
+                            <a href="#" class="btn btn-primary">Detail Portofolio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek Aplikasi Sederhana -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="potofolio/apk1.jpeg" alt="Aplikasi Sederhana" class="card-img-top rounded" style="width: 100%; height: auto;">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-mobile-alt"></i> Aplikasi Sederhana</h5>
+                            <p class="card-text">Membuat aplikasi sederhana yang membantu pengguna dalam menyelesaikan tugas sehari-hari.</p>
+                            <a href="#" class="btn btn-primary">Detail Portofolio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek Website -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="potofolio/website.png" alt="Website" class="card-img-top rounded" style="width: 100%; height: auto;">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-laptop-code"></i> Website</h5>
+                            <p class="card-text">Membangun website interaktif dengan desain responsif dan fitur-fitur menarik.</p>
+                            <a href="#" class="btn btn-primary">Detail Portofolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+
+
 <footer>
     <div class="footer-content">
         <div class="footer-nav">
@@ -379,4 +474,3 @@
         </div>
     </div>
 </footer>
-
